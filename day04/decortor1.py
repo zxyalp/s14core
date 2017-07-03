@@ -8,8 +8,10 @@ Created on 2017/6/18
 @author: summe
 """
 
+
 def auth(func):
     def wrapper():
+        pass
 
 
 @auth

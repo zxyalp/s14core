@@ -21,5 +21,8 @@ class Movie(object):
         webbrowser.open(self.trailer_url)
 
     def show_other_info(self):
+        movie_other_info = ''
+        other_content = '<span >{key}:</span>{value}</br>'
         for key, value in self.movie_other_info.items():
-            print(key, ":", value)
+            movie_other_info += other_content.format(key=key, value=value)
+        return movie_other_info

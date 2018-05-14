@@ -15,7 +15,7 @@ def create_movie_list(movie_list):
     movies = []
 
     for movie in movie_list:
-        movie_media = media.Movie(movie.get("title"), movie.get("poster_image_url"), movie.get("trailer_url"), **movie)
+        movie_media = media.Movie(movie.pop("title"), movie.pop("poster_image_url"), movie.pop("trailer_url"), **movie)
         movie_media.show_other_info()
         movies.append(movie_media)
 

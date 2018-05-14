@@ -4,8 +4,6 @@ Created on 2017/7/3
 
 @author: summe
 """
-
-<<<<<<< HEAD
 import unittest
 
 
@@ -35,12 +33,10 @@ if __name__ == '__main__':
     runner.run(suite)
 
 
-=======
-
 def test():
     print("shjdhj")
 
 
 if __name__ == '__main__':
     test()
->>>>>>> 080673cdb5efbd2efa559cb2fe87093dce2055a6
+

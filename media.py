@@ -10,13 +10,16 @@ import webbrowser
 class Movie(object):
     """Create movie information."""
 
-    def __init__(self, movie_title, poster_image_url, trailer_url, **kwargs):
+    def __init__(self, movie_title, poster_image, trailer, **kwargs):
         """kwargs include director, screenwriter, starring, language, release time, story introduction, etc. """
         self.title = movie_title
-        self.poster_image_url = poster_image_url
-        self.trailer_url = trailer_url
+        self.poster_image_url = poster_image
+        self.trailer_url = trailer
         self.movie_other_info = kwargs
 
     def show_trailer(self):
         webbrowser.open(self.trailer_url)
 
+    def show_other_info(self):
+        for key, value in self.movie_other_info.items():
+            print(key, ":", value)

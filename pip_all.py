@@ -1,7 +1,8 @@
 import pip
+import sys, os
+from subprocess import check_call
 
-from subprocess import call
+for p in os.listdir('D:\letcode\IdeaProjects'):
+    os.chdir('D:\letcode\IdeaProjects\\'+p)
+    check_call('git pull')
 
-
-for dist in pip.get_installed_distributions():
-    call("pip install --upgrade " + dist.project_name, shell=True)

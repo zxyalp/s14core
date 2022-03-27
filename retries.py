@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on 2021/9/14 0014
-
-@author: xing yan
-"""
-# -*- coding: utf-8 -*-
-"""
 Created on 2019/9/19
 
 @author: yang.zhou
